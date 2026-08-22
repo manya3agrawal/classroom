@@ -4,6 +4,12 @@ class Stu{
     private int id;
     private int salary;
     private String department;
+    Stu(String name, int id, int salary, String department) {
+        this.name = name;
+        this.id = id;
+        this.salary = salary;
+        this.department = department;
+    }
     public void setname(String name){
         this.name = name;
     }
@@ -33,7 +39,7 @@ class Stu{
 public class getter_setter {
 
     public static void main(String[] args) {
-        Stu obj = new Stu();
+        Stu obj = new Stu("Manya",18,4000000,"CSE AIML");
         //set details
         obj.setname("Manya");
         obj.setid(1);
